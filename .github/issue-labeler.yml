@@ -1,8 +1,3 @@
-# Configuration for github/issue-labeler.
-# Regex-matches the title and/or body to apply labels. Replaces the old
-# (now defunct) issue-label-bot ML classifier with three deterministic rules.
-# Syntax: https://github.com/github/issue-labeler
-
 labels:
   - label: "bug"
     sync: true
@@ -19,6 +14,14 @@ labels:
       - "(?i)(feature request|proposal|suggestion|improvement|enhance(ment)?|add support for)"
     title:
       - "(?i)(feature|request|proposal|suggestion|improvement|enhance|add support)"
+
+  - label: "documentation"
+    sync: true
+    matched: true
+    body:
+      - "(?i)(documentation|\\bdocs\\b|readme|typo|spelling|grammar)"
+    title:
+      - "(?i)(documentation|\\bdocs\\b|readme|typo|spelling|grammar)"
 
   - label: "question"
     sync: true
