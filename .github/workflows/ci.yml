@@ -12,5 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
+
       - name: Run lint
         uses: docker://rhysd/actionlint:1.7.7

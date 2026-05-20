@@ -16,7 +16,8 @@ jobs:
       contents: read
       issues: write
     steps:
-      - uses: github/issue-labeler@v3.4
+      - name: Run issue labeler
+        uses: github/issue-labeler@v3.4
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           configuration-path: .github/issue-labeler.yml
@@ -33,7 +34,8 @@ jobs:
       pull-requests: write
       issues: write
     steps:
-      - uses: actions/labeler@v5
+      - name: Run pr labeler
+        uses: actions/labeler@v5
         with:
           configuration-path: .github/pr-labeler.yml
           sync-labels: true
@@ -45,7 +47,8 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - uses: tomdewildt/request-info@v1.0.0
+      - name: Run request info
+        uses: tomdewildt/request-info@v1.0.0
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -56,7 +59,8 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - uses: actions/first-interaction@v1
+      - name: Run first interaction
+        uses: actions/first-interaction@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: >
