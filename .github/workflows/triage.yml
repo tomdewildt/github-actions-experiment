@@ -9,14 +9,15 @@ on:
 permissions: {}
 
 jobs:
-  issue-labeler:
-    if: github.event_name == 'issues'
+  text-labeler:
+    if: github.event.action != 'synchronize'
     runs-on: ubuntu-latest
     permissions:
       contents: read
       issues: write
+      pull-requests: write
     steps:
-      - name: Run issue labeler
+      - name: Run text labeler
         uses: github/issue-labeler@v3.4
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
@@ -26,19 +27,18 @@ jobs:
           include-body: 1
           sync-labels: 1
 
-  pr-labeler:
+  file-labeler:
     if: github.event_name == 'pull_request_target' && github.event.action != 'edited'
     runs-on: ubuntu-latest
     permissions:
       contents: read
       pull-requests: write
-      issues: write
     steps:
-      - name: Run pr labeler
+      - name: Run file labeler
         uses: actions/labeler@v5
         with:
-          configuration-path: .github/pr-labeler.yml
-          sync-labels: true
+          configuration-path: .github/file-labeler.yml
+          sync-labels: false
 
   request-info:
     if: github.event.action == 'opened' || github.event.action == 'edited'
