@@ -1,0 +1,29 @@
+# Configuration for github/issue-labeler.
+# Regex-matches the title and/or body to apply labels. Replaces the old
+# (now defunct) issue-label-bot ML classifier with three deterministic rules.
+# Syntax: https://github.com/github/issue-labeler
+
+labels:
+  - label: "bug"
+    sync: true
+    matched: true
+    body:
+      - "(?i)(bug|crash|broken|not working|unexpected behaviou?r|stack ?trace|exception)"
+    title:
+      - "(?i)(bug|crash|broken|not working|fail(s|ed|ing)?|error)"
+
+  - label: "enhancement"
+    sync: true
+    matched: true
+    body:
+      - "(?i)(feature request|proposal|suggestion|improvement|enhance(ment)?|add support for)"
+    title:
+      - "(?i)(feature|request|proposal|suggestion|improvement|enhance|add support)"
+
+  - label: "question"
+    sync: true
+    matched: true
+    body:
+      - "(?i)(question|how (do|to|can)|why does|is it possible|clarif(y|ication))"
+    title:
+      - "(?i)(question|how (do|to|can)|why does|is it possible|\\?$)"
