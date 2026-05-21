@@ -74,12 +74,12 @@ jobs:
       - name: Run first interaction
         uses: actions/first-interaction@v3
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          issue-message: >
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          issue_message: >
             Thanks for opening your first issue here! A maintainer will take a
             look as soon as possible. In the meantime, double-check that the
             issue follows the template, it makes triage much faster.
-          pr-message: >
+          pr_message: >
             Thanks for your first pull request! A maintainer will review it as
             soon as possible. Make sure CI is green and the PR description
             explains the change and links any related issue.
