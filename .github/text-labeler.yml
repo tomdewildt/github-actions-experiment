@@ -1,32 +1,11 @@
-labels:
-  - label: "bug"
-    sync: true
-    matched: true
-    body:
-      - "(?i)(bug|crash|broken|not working|unexpected behaviou?r|stack ?trace|exception)"
-    title:
-      - "(?i)(bug|crash|broken|not working|fail(s|ed|ing)?|error)"
+bug:
+  - "(?i)(bug|crash|broken|not working|unexpected behaviou?r|stack ?trace|exception|fail(s|ed|ing)?|error)"
 
-  - label: "enhancement"
-    sync: true
-    matched: true
-    body:
-      - "(?i)(feature request|proposal|suggestion|improvement|enhance(ment)?|add support for)"
-    title:
-      - "(?i)(feature|request|proposal|suggestion|improvement|enhance|add support)"
+enhancement:
+  - "(?i)(feature request|proposal|suggestion|improvement|enhance(ment)?|add support)"
 
-  - label: "documentation"
-    sync: true
-    matched: true
-    body:
-      - "(?i)(documentation|\\bdocs\\b|readme|typo|spelling|grammar)"
-    title:
-      - "(?i)(documentation|\\bdocs\\b|readme|typo|spelling|grammar)"
+documentation:
+  - "(?i)(documentation|\\bdocs\\b|readme|typo|spelling|grammar)"
 
-  - label: "question"
-    sync: true
-    matched: true
-    body:
-      - "(?i)(question|how (do|to|can)|why does|is it possible|clarif(y|ication))"
-    title:
-      - "(?i)(question|how (do|to|can)|why does|is it possible|\\?$)"
+question:
+  - "(?i)(question|how (do|to|can)|why does|is it possible|clarif(y|ication)|\\?$)"
