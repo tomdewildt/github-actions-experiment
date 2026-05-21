@@ -1,11 +1,11 @@
 bug:
-  - "(?i)(bug|crash|broken|not working|unexpected behaviou?r|stack ?trace|exception|fail(s|ed|ing)?|error)"
+  - "[Bb]ug|[Cc]rash|[Bb]roken|[Nn]ot [Ww]orking|[Uu]nexpected [Bb]ehaviou?r|[Ss]tack ?[Tt]race|[Ee]xception|[Ff]ail(s|ed|ing)?|[Ee]rror"
 
 enhancement:
-  - "(?i)(feature request|proposal|suggestion|improvement|enhance(ment)?|add support)"
+  - "[Ff]eature [Rr]equest|[Pp]roposal|[Ss]uggestion|[Ii]mprovement|[Ee]nhance(ment)?|[Aa]dd [Ss]upport"
 
 documentation:
-  - "(?i)(documentation|\\bdocs\\b|readme|typo|spelling|grammar)"
+  - "[Dd]ocumentation|\\b[Dd]ocs\\b|[Rr]eadme|[Tt]ypo|[Ss]pelling|[Gg]rammar"
 
 question:
-  - "(?i)(question|how (do|to|can)|why does|is it possible|clarif(y|ication)|\\?$)"
+  - "[Qq]uestion|[Hh]ow ([Dd]o|[Tt]o|[Cc]an)|[Ww]hy [Dd]oes|[Ii]s [Ii]t [Pp]ossible|[Cc]larif(y|ication)|\\?$"
