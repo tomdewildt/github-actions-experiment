@@ -10,6 +10,8 @@ updates:
     groups:
       actions-minor:
         applies-to: version-updates
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
@@ -28,6 +30,8 @@ updates:
     groups:
       npm-minor:
         applies-to: version-updates
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
@@ -46,6 +50,8 @@ updates:
     groups:
       pip-minor:
         applies-to: version-updates
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
@@ -64,6 +70,8 @@ updates:
     groups:
       terraform-minor:
         applies-to: version-updates
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
@@ -82,6 +90,8 @@ updates:
     groups:
       gomod-minor:
         applies-to: version-updates
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
@@ -100,6 +110,8 @@ updates:
     groups:
       docker-minor:
         applies-to: version-updates
+        patterns:
+          - "*"
         update-types:
           - "minor"
           - "patch"
