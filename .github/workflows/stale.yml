@@ -19,8 +19,8 @@ jobs:
       - name: Run stale
         uses: actions/stale@v9
         with:
-          days-before-stale: 0
-          days-before-close: 1
+          days-before-stale: 60
+          days-before-close: 7
           stale-issue-label: "inactive"
           stale-pr-label: "inactive"
           exempt-issue-labels: "pinned,security"
