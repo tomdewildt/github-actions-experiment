@@ -2,7 +2,7 @@ bug:
   - head-branch: ["^fix/", "^bug/", "^hotfix/"]
 
 enhancement:
-  - head-branch: ["^feat/", "^feature/"]
+  - head-branch: ["^feat/", "^feature/", "^refactor/"]
 
 documentation:
   - head-branch: ["^docs/"]
