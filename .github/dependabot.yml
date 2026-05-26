@@ -4,82 +4,106 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 0
+    open-pull-requests-limit: 5
     labels:
       - "dependencies"
-      - "security"
     groups:
+      actions-minor:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
       actions-security:
         applies-to: security-updates
         patterns:
           - "*"
 
-  # - package-ecosystem: "npm"
-  #   directory: "/"
-  #   schedule:
-  #     interval: "weekly"
-  #   open-pull-requests-limit: 0
-  #   labels:
-  #     - "dependencies"
-  #     - "security"
-  #   groups:
-  #     npm-security:
-  #       applies-to: security-updates
-  #       patterns:
-  #         - "*"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+    groups:
+      npm-minor:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+      npm-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
 
-  # - package-ecosystem: "pip"
-  #   directory: "/"
-  #   schedule:
-  #     interval: "weekly"
-  #   open-pull-requests-limit: 0
-  #   labels:
-  #     - "dependencies"
-  #     - "security"
-  #   groups:
-  #     pip-security:
-  #       applies-to: security-updates
-  #       patterns:
-  #         - "*"
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+    groups:
+      pip-minor:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+      pip-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
 
-  # - package-ecosystem: "terraform"
-  #   directory: "/"
-  #   schedule:
-  #     interval: "weekly"
-  #   open-pull-requests-limit: 0
-  #   labels:
-  #     - "dependencies"
-  #     - "security"
-  #   groups:
-  #     terraform-security:
-  #       applies-to: security-updates
-  #       patterns:
-  #         - "*"
+  - package-ecosystem: "terraform"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+    groups:
+      terraform-minor:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+      terraform-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
 
-  # - package-ecosystem: "gomod"
-  #   directory: "/"
-  #   schedule:
-  #     interval: "weekly"
-  #   open-pull-requests-limit: 0
-  #   labels:
-  #     - "dependencies"
-  #     - "security"
-  #   groups:
-  #     gomod-security:
-  #       applies-to: security-updates
-  #       patterns:
-  #         - "*"
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+    groups:
+      gomod-minor:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+      gomod-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
 
-  # - package-ecosystem: "docker"
-  #   directory: "/"
-  #   schedule:
-  #     interval: "weekly"
-  #   open-pull-requests-limit: 0
-  #   labels:
-  #     - "dependencies"
-  #     - "security"
-  #   groups:
-  #     docker-security:
-  #       applies-to: security-updates
-  #       patterns:
-  #         - "*"
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+    groups:
+      docker-minor:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+      docker-security:
+        applies-to: security-updates
+        patterns:
+          - "*"
