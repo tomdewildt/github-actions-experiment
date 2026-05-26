@@ -23,8 +23,8 @@ jobs:
           days-before-close: 7
           stale-issue-label: "inactive"
           stale-pr-label: "inactive"
-          exempt-issue-labels: "pinned,security"
-          exempt-pr-labels: "pinned,security"
+          exempt-issue-labels: "pinned"
+          exempt-pr-labels: "pinned"
           stale-issue-message: >
             This issue has been automatically marked as stale because it has not
             had recent activity. It will be closed if no further activity occurs.
