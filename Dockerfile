@@ -1,10 +1,10 @@
-FROM python:3.14-slim
+FROM node:18-slim
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY package.json .
+RUN npm install --production
 
 COPY . .
 
-CMD ["python", "-c", "print('hello')"]
+CMD ["node", "-e", "console.log('hello')"]
