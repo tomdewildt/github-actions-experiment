@@ -8,13 +8,10 @@ updates:
     labels:
       - "dependencies"
     groups:
-      actions-minor:
+      actions-all:
         applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
       actions-security:
         applies-to: security-updates
         patterns:
@@ -28,13 +25,10 @@ updates:
     labels:
       - "dependencies"
     groups:
-      npm-minor:
+      npm-all:
         applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
       npm-security:
         applies-to: security-updates
         patterns:
@@ -48,13 +42,10 @@ updates:
     labels:
       - "dependencies"
     groups:
-      pip-minor:
+      pip-all:
         applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
       pip-security:
         applies-to: security-updates
         patterns:
@@ -68,13 +59,10 @@ updates:
     labels:
       - "dependencies"
     groups:
-      terraform-minor:
+      terraform-all:
         applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
       terraform-security:
         applies-to: security-updates
         patterns:
@@ -88,13 +76,10 @@ updates:
     labels:
       - "dependencies"
     groups:
-      gomod-minor:
+      gomod-all:
         applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
       gomod-security:
         applies-to: security-updates
         patterns:
@@ -108,13 +93,10 @@ updates:
     labels:
       - "dependencies"
     groups:
-      docker-minor:
+      docker-all:
         applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
       docker-security:
         applies-to: security-updates
         patterns:
