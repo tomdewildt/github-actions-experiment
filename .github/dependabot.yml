@@ -8,14 +8,11 @@ updates:
     labels:
       - "dependencies"
     groups:
-      actions-minor:
+      github-actions:
         applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
-      actions-security:
+      github-actions-security:
         applies-to: security-updates
         patterns:
           - "*"
@@ -28,13 +25,10 @@ updates:
     labels:
       - "dependencies"
     groups:
-      npm-minor:
+      npm:
         applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
       npm-security:
         applies-to: security-updates
         patterns:
@@ -48,13 +42,10 @@ updates:
     labels:
       - "dependencies"
     groups:
-      pip-minor:
+      pip:
         applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
       pip-security:
         applies-to: security-updates
         patterns:
@@ -68,13 +59,10 @@ updates:
     labels:
       - "dependencies"
     groups:
-      terraform-minor:
+      terraform:
         applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
       terraform-security:
         applies-to: security-updates
         patterns:
@@ -88,14 +76,11 @@ updates:
     labels:
       - "dependencies"
     groups:
-      gomod-minor:
+      go:
         applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
-      gomod-security:
+      go-security:
         applies-to: security-updates
         patterns:
           - "*"
@@ -108,13 +93,10 @@ updates:
     labels:
       - "dependencies"
     groups:
-      docker-minor:
+      docker:
         applies-to: version-updates
         patterns:
           - "*"
-        update-types:
-          - "minor"
-          - "patch"
       docker-security:
         applies-to: security-updates
         patterns:
