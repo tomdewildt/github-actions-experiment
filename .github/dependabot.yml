@@ -8,11 +8,11 @@ updates:
     labels:
       - "dependencies"
     groups:
-      actions-all:
+      github-actions:
         applies-to: version-updates
         patterns:
           - "*"
-      actions-security:
+      github-actions-security:
         applies-to: security-updates
         patterns:
           - "*"
@@ -25,7 +25,7 @@ updates:
     labels:
       - "dependencies"
     groups:
-      npm-all:
+      npm:
         applies-to: version-updates
         patterns:
           - "*"
@@ -42,7 +42,7 @@ updates:
     labels:
       - "dependencies"
     groups:
-      pip-all:
+      pip:
         applies-to: version-updates
         patterns:
           - "*"
@@ -59,7 +59,7 @@ updates:
     labels:
       - "dependencies"
     groups:
-      terraform-all:
+      terraform:
         applies-to: version-updates
         patterns:
           - "*"
@@ -76,11 +76,11 @@ updates:
     labels:
       - "dependencies"
     groups:
-      gomod-all:
+      go:
         applies-to: version-updates
         patterns:
           - "*"
-      gomod-security:
+      go-security:
         applies-to: security-updates
         patterns:
           - "*"
@@ -93,7 +93,7 @@ updates:
     labels:
       - "dependencies"
     groups:
-      docker-all:
+      docker:
         applies-to: version-updates
         patterns:
           - "*"
