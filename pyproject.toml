@@ -3,13 +3,13 @@ name = "github-actions-experiment"
 version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = [
-    "fastapi>=0.100.0",
-    "sqlalchemy>=2.0.0",
-    "uvicorn>=0.22.0",
+    "fastapi>=0.136.3",
+    "sqlalchemy>=2.0.50",
+    "uvicorn>=0.48.0",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "black>=23.3.0",
-    "mypy>=1.4.0",
+    "black>=26.5.1",
+    "mypy>=2.1.0",
 ]
