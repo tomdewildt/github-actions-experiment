@@ -3,16 +3,12 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 5
+      interval: "weekly"
+    open-pull-requests-limit: 0
     labels:
       - "dependencies"
     groups:
       github-actions:
-        applies-to: version-updates
-        patterns:
-          - "*"
-      github-actions-security:
         applies-to: security-updates
         patterns:
           - "*"
@@ -20,16 +16,12 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 5
+      interval: "weekly"
+    open-pull-requests-limit: 0
     labels:
       - "dependencies"
     groups:
       npm:
-        applies-to: version-updates
-        patterns:
-          - "*"
-      npm-security:
         applies-to: security-updates
         patterns:
           - "*"
@@ -37,16 +29,12 @@ updates:
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 5
+      interval: "weekly"
+    open-pull-requests-limit: 0
     labels:
       - "dependencies"
     groups:
       pip:
-        applies-to: version-updates
-        patterns:
-          - "*"
-      pip-security:
         applies-to: security-updates
         patterns:
           - "*"
@@ -54,16 +42,12 @@ updates:
   - package-ecosystem: "terraform"
     directory: "/"
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 5
+      interval: "weekly"
+    open-pull-requests-limit: 0
     labels:
       - "dependencies"
     groups:
       terraform:
-        applies-to: version-updates
-        patterns:
-          - "*"
-      terraform-security:
         applies-to: security-updates
         patterns:
           - "*"
@@ -71,16 +55,12 @@ updates:
   - package-ecosystem: "gomod"
     directory: "/"
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 5
+      interval: "weekly"
+    open-pull-requests-limit: 0
     labels:
       - "dependencies"
     groups:
       go:
-        applies-to: version-updates
-        patterns:
-          - "*"
-      go-security:
         applies-to: security-updates
         patterns:
           - "*"
@@ -88,16 +68,12 @@ updates:
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
-      interval: "daily"
-    open-pull-requests-limit: 5
+      interval: "weekly"
+    open-pull-requests-limit: 0
     labels:
       - "dependencies"
     groups:
       docker:
-        applies-to: version-updates
-        patterns:
-          - "*"
-      docker-security:
         applies-to: security-updates
         patterns:
           - "*"
