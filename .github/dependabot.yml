@@ -65,6 +65,19 @@ updates:
         patterns:
           - "*"
 
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0
+    labels:
+      - "dependencies"
+    groups:
+      cargo:
+        applies-to: security-updates
+        patterns:
+          - "*"
+
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
