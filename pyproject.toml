@@ -13,3 +13,19 @@ dev = [
     "black>=26.5.1",
     "mypy>=2.1.0",
 ]
+
+[tool.poetry]
+name = "github-actions-experiment"
+version = "0.1.0"
+description = ""
+packages = []
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = ">=0.136.3"
+sqlalchemy = ">=2.0.50"
+uvicorn = ">=0.48.0"
+
+[tool.poetry.group.dev.dependencies]
+black = ">=26.5.1"
+mypy = ">=2.1.0"
