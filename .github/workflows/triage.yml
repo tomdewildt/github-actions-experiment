@@ -72,3 +72,5 @@ jobs:
 
       - name: Run first interaction
         uses: tomdewildt/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
